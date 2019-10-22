@@ -1,0 +1,25 @@
+﻿@using WebOne.Models;
+@model Person
+
+@{
+    ViewBag.Title = "My Page";
+}
+
+<h1> Questa è la prova del Nove</h1>
+<p>Current Time: @DateTime.Now</p>
+
+@if (ViewBag.time >= 12)
+{
+    <p>NOP</p>
+}
+else
+{ <p>YEP</p> }
+        
+<ul>
+     <li>Age: @Model.Age</li>
+     <li>Genre: @Model.Genre</li>
+     <li>Bio: @Model.Bio</li>
+</ul>
+
+
+
